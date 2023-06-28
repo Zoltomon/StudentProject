@@ -1,0 +1,59 @@
+﻿<Page x:Class="TestProject.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Меню">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Button
+                Style="{DynamicResource BtnRound}"
+                Name="BtnStudent"
+                Height="40"
+                FontSize="20"
+                Click="BtnStudent_Click"
+                Content="Просмотр студентов"/>
+            <Button
+                Height="40"
+                FontSize="20"
+                Style="{DynamicResource BtnRound}"
+                Name="BtnTeacher"
+                Click="BtnTeacher_Click"
+                Content="Просмотр сотрудников"/>
+            <Button
+                Height="40"
+                FontSize="20"
+                Click="BtnLessons_Click"
+                Style="{DynamicResource BtnRound}"
+                Name="BtnLessons"
+                Content="Просмотр занятий"/>
+            <Button
+                Height="40"
+                FontSize="20"
+                Name="BtnGradeStudent"
+                Style="{DynamicResource BtnRound}"
+                Click="BtnGradeStudent_Click"
+                Content="Просмотреть успеваемость студента"/>
+            <Button
+                Height="40"
+                FontSize="20"
+                Click="BtnGroup_Click"
+                Style="{DynamicResource BtnRound}"
+                Name="BtnGroup"
+                Content="Просмотреть группы"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0" VerticalAlignment="Bottom">
+            <Button
+                Height="40"
+                FontSize="20"
+                Click="BtnExit_Click"
+                Style="{DynamicResource BtnExit}"
+                Name="BtnExit"
+                Content="Выход"/>
+        </StackPanel>
+    </Grid>
+</Page>

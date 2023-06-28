@@ -1,0 +1,26 @@
+﻿<Window x:Class="TestProject.Pages.PostWindow.GroupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestProject.Pages.PostWindow"
+        mc:Ignorable="d"
+        Title="Форма добавления группы" Height="150" Width="250">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Введите наименование:"/>
+            <TextBox
+                Name="TxbGroup"/>
+            <Button
+                Name="BtnSave"
+                Click="BtnSave_Click"
+                Content="Сохранить"
+                Style="{DynamicResource BtnRound}"/>
+            <Button
+                Name="BtnBack"
+                Click="BtnBack_Click"
+                Content="Назад"
+                Style="{DynamicResource BtnExit}"/>
+        </StackPanel>
+    </Grid>
+</Window>
